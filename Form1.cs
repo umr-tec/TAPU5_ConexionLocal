@@ -16,5 +16,11 @@ namespace TAPU5_Ejemplo1
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Conexion conexion = new Conexion();
+            conexion.GuardarAlumno(txtMatricula.Text,txtNombre.Text,txtprimerApellido.Text,txtSegundoApellido.Text, dateTimePicker1.Value.ToShortDateString());
+        }
     }
 }
