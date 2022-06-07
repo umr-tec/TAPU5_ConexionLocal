@@ -1,0 +1,11 @@
+C:\Users\ulise\source\repos\TAPU5_Ejemplo1\bin\Debug\TAPU5_Ejemplo1.exe.config
+C:\Users\ulise\source\repos\TAPU5_Ejemplo1\bin\Debug\TAPU5_Ejemplo1.exe
+C:\Users\ulise\source\repos\TAPU5_Ejemplo1\bin\Debug\TAPU5_Ejemplo1.pdb
+C:\Users\ulise\source\repos\TAPU5_Ejemplo1\obj\Debug\TAPU5_Ejemplo1.csproj.AssemblyReference.cache
+C:\Users\ulise\source\repos\TAPU5_Ejemplo1\obj\Debug\TAPU5_Ejemplo1.conexionServer.resources
+C:\Users\ulise\source\repos\TAPU5_Ejemplo1\obj\Debug\TAPU5_Ejemplo1.Form1.resources
+C:\Users\ulise\source\repos\TAPU5_Ejemplo1\obj\Debug\TAPU5_Ejemplo1.Properties.Resources.resources
+C:\Users\ulise\source\repos\TAPU5_Ejemplo1\obj\Debug\TAPU5_Ejemplo1.csproj.GenerateResource.cache
+C:\Users\ulise\source\repos\TAPU5_Ejemplo1\obj\Debug\TAPU5_Ejemplo1.csproj.CoreCompileInputs.cache
+C:\Users\ulise\source\repos\TAPU5_Ejemplo1\obj\Debug\TAPU5_Ejemplo1.exe
+C:\Users\ulise\source\repos\TAPU5_Ejemplo1\obj\Debug\TAPU5_Ejemplo1.pdb
