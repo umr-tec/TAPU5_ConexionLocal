@@ -14,7 +14,7 @@ namespace TAPU5_Ejemplo1
         private string connection = string.Empty;
         private SqlConnection connect;
         private SqlCommand command;
-        private SqlDataReader reader;
+        private SqlDataAdapter dataAdapter;
         #endregion
 
         //conectarme
@@ -65,6 +65,29 @@ namespace TAPU5_Ejemplo1
                 CerrarConexion();
             }
             return res;
+        }
+
+        //Traer inforacion de la BD
+        public DataSet MostrarDatos()
+        {
+            DataSet dataSet = new DataSet();            
+            try
+            {
+                Conectar();
+                command = new SqlCommand("SELECT UPPER( matricula) AS 'Matricula', UPPER(nombre) AS 'Nombre del Alumno', UPPER(prinmerApellido) + ' ' + UPPER(segundoApellido) AS 'Apellidos del Alumno',UPPER(carrera) AS 'Carrera', fechaNacimiento as 'Fecha de Nacimiento' FROM Alumnos", connect);
+                command.ExecuteScalar();
+                dataAdapter = new SqlDataAdapter(command);
+                dataAdapter.Fill(dataSet);
+            }
+            catch (Exception ex)
+            {
+                dataSet = null;
+                MessageBox.Show(ex.Message.ToString());
+            }
+            finally {
+                CerrarConexion();
+            }
+            return dataSet;
         }
     }
 }

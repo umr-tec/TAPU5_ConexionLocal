@@ -20,7 +20,24 @@ namespace TAPU5_Ejemplo1
         private void button1_Click(object sender, EventArgs e)
         {
             Conexion conexion = new Conexion();
-            conexion.GuardarAlumno(txtMatricula.Text,txtNombre.Text,txtprimerApellido.Text,txtSegundoApellido.Text, dateTimePicker1.Value.ToShortDateString());
+            conexion.GuardarAlumno(txtMatricula.Text ,txtNombre.Text,txtprimerApellido.Text,txtSegundoApellido.Text, dateTimePicker1.Value.ToShortDateString());
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Conexion conexion = new Conexion();
+            DataTable dt = new DataTable();
+
+            dt = conexion.MostrarDatos().Tables[0];
+            dataGridView1.DataSource = dt;
+
+            /*
+               DataTable dt1 = new DataTable();
+
+            dt = conexion.MostrarDatos().Tables[1];
+            dataGridView2.DataSource = dt1;
+             */
+
         }
     }
 }
